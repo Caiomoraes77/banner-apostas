@@ -1,0 +1,105 @@
+<div style="max-width:940px;margin:16px auto;font-family:sans-serif;font-size:14px;position:relative;" role="complementary" aria-label="Publicidade">
+  <!-- faixa de cards -->
+  <div class="ads-row">
+    <!-- F12BET -->
+    <a href="https://go.terrordasbets.com/f12bet" rel="nofollow sponsored" target="_blank" class="ads-card ads-highlight">
+      <img src="https://static.wixstatic.com/media/34b6dc_d08b5bb827f74791aa6e91b3096c70af~mv2.png" alt="F12BET">
+      <div class="ads-content">
+        <div class="ads-title">F12BET</div>
+        <div class="ads-text">Aposte com as melhores cotações.</div>
+        <div class="ads-btn">Cadastre-se</div>
+        <div class="ads-license">SPA/MF Nº 319/2025</div>
+      </div>
+    </a>
+
+    <!-- ESTRELABET -->
+    <a href="https://go.terrordasbets.com/estrelabet" rel="nofollow sponsored" target="_blank" class="ads-card">
+      <img src="https://static.wixstatic.com/media/34b6dc_1f108405b9814d63896db187a4bee7d2~mv2.png" alt="Estrelabet">
+      <div class="ads-content">
+        <div class="ads-title">ESTRELABET</div>
+        <div class="ads-text">As melhores promoções estão aqui.</div>
+        <div class="ads-btn">Cadastre-se</div>
+        <div class="ads-license">SPA/MF Nº 320/2025</div>
+      </div>
+    </a>
+
+    <!-- ESPORTES DA SORTE -->
+    <a href="https://go.terrordasbets.com/esportesdasorte" rel="nofollow sponsored" target="_blank" class="ads-card">
+      <img src="https://static.wixstatic.com/media/34b6dc_e60eeed25bc1407187ca49534bf02491~mv2.png" alt="Esportes da Sorte">
+      <div class="ads-content">
+        <div class="ads-title">ESPORTES DA SORTE</div>
+        <div class="ads-text">Cotações turbinadas: Aqui seu palpite vale mais.</div>
+        <div class="ads-btn">Cadastre-se</div>
+        <div class="ads-license">SPA/MF Nº 136/2025</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- seta ➜ (mobile) -->
+  <div class="scroll-indicator">➜</div>
+
+  <div style="text-align:center;font-size:12px;color:#555;margin-top:8px;">
+    Publicidade · 18+ Jogue com responsabilidade
+  </div>
+
+  <style>
+    /* faixa de cards */
+    .ads-row{
+      display:flex;
+      gap:10px;
+      overflow-x:auto;
+      padding:0 5px;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;       /* Firefox */
+      -ms-overflow-style:none;    /* IE / Edge antigo */
+    }
+    .ads-row::-webkit-scrollbar{display:none;} /* Chrome/Safari */
+
+    /* card padrão */
+    .ads-card{
+      flex:0 0 auto;
+      width:294px;               /* 3 × cards + 2 × gap + 2 × padding = aprox 936 px */
+      background:#fff;
+      border:1px solid #ccc;
+      border-radius:8px;
+      display:flex;
+      flex-direction:column;
+      text-decoration:none;
+      color:#000;
+      min-height:220px;
+      scroll-snap-align:start;
+    }
+    .ads-highlight{border:2px solid #22aa44;}     /* destaque F12 */
+
+    .ads-card img{
+      height:70px;
+      object-fit:contain;
+      border-bottom:1px solid #eee;
+      padding:8px;
+    }
+    .ads-content{padding:10px;display:flex;flex-direction:column;gap:6px;flex:1;}
+    .ads-title{text-align:center;font-weight:bold;font-size:15px;}
+    .ads-text{text-align:center;font-size:13px;color:#333;}
+    .ads-btn{text-align:center;background:#0077cc;color:#fff;padding:6px;border-radius:6px;font-size:13px;font-weight:bold;}
+    .ads-license{text-align:center;font-size:11px;color:#666;}
+
+    /* seta de rolagem */
+    .scroll-indicator{
+      display:none;
+      position:absolute;right:4px;top:50%;transform:translateY(-50%);
+      background:rgba(255,255,255,.95);
+      border-radius:50%;
+      width:32px;height:32px;box-shadow:0 0 4px rgba(0,0,0,.2);
+      justify-content:center;align-items:center;font-size:18px;color:#000;
+      animation:pulse 1.4s infinite ease-in-out;pointer-events:none;z-index:10;
+    }
+    @keyframes pulse{0%,100%{opacity:.3;transform:translateY(-50%) scale(1);}50%{opacity:1;transform:translateY(-50%) scale(1.15);}}
+
+    /* MOBILE – 1,5 cards visíveis + seta + scrollbar oculta */
+    @media(max-width:768px){
+      .ads-card{width:210px;}            /* 210 × 1,5 ≈ 315 px em visão 320 px */
+      .scroll-indicator{display:flex;}
+    }
+  </style>
+</div>
